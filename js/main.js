@@ -345,6 +345,7 @@ function startFullWidthSlider() {
 		}, 1500);
 	});
 	if ($(window).width() < 768) {
+		/*
 		$('.royalSlider .rsImg').each(function() {
 			var element = $(this);
 			//sostituissi l'href con la versione ridotta per mobile (cosi' e' come finiscono le thumb ridotte di wp)
@@ -353,6 +354,7 @@ function startFullWidthSlider() {
 
 			this.href = this.href.replace(".jpg", "-960x650.jpg");
 		});
+		*/
 	}
 	if ($('#full-width-slider').length) {
 		var windowHeight = $(window).height();
@@ -424,11 +426,13 @@ function ridimensionaHero() {
 		$('#map_canvas, .mappa-overlay').css({
 			'min-height': windowHeight
 		});
+		/*
 		$('.royalSlider .rsImg').each(function() {
 			var element = $(this);
 			//sostituissi l'href con la versione full
 			this.src = this.src.replace("-960x650.jpg", ".jpg");
 		});
+		*/
 	} else {
 		$('#map_canvas').css({
 			'min-height': '300px'

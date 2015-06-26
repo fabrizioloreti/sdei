@@ -380,25 +380,20 @@ function startFullWidthSlider() {
 			navigateByClick: false,
 			startSlideId: 0,
 			numImagesToPreload: 1, //2
-			autoPlay: {
-				// autoplay options go gere
-				enabled: false,
-				pauseOnHover: true,
-				delay: 8000
-			},
 			height: windowHeight,
 			width: windowWidth,
 			transitionType: transizione,
+			transitionSpeed: 3000,
 			globalCaption: false,
 			slidesSpacing: 0,
 			randomizeSlides: false,
 			fadeinLoadedSlide: true,
 			addActiveClass: true,
 			autoPlay: {
-	    		// autoplay options go gere
-	    		enabled: true,
-	    		pauseOnHover: true
-	    	}
+				// autoplay options go gere
+				enabled: true,
+				pauseOnHover: true
+			}
 		});
 		$('#full-width-slider').css({
 			'width': '100%'
